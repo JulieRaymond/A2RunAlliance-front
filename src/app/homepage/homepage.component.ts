@@ -1,12 +1,14 @@
 import {Component} from '@angular/core';
 import {Router} from "@angular/router";
 import {ButtonComponent} from "../button/button.component";
+import {ValueCardComponent} from "../value-card/value-card.component";
 
 @Component({
   selector: 'app-homepage',
   standalone: true,
   imports: [
-    ButtonComponent
+    ButtonComponent,
+    ValueCardComponent
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.scss'
@@ -25,15 +27,12 @@ export class HomepageComponent {
     'Fin 2013, elles sont rejointes par Sophia, Florence, Marie, Marion, Barbara et Kelly. L’association A2 running est créée.';
 
   valueTitle: string = 'Nos valeurs';
-
-  // value1Title: string = "Entraite !";
-  // value1Description: string = "Chacun se soutient et s’encourage pour donner le meilleur de soi et atteindre le but qu’il s’est fixé !";
-  //
-  // value2Title: string = "Sourire !";
-  // value2Description: string = "Des courses…mais aussi des apéros organisés par l’association !";
-  //
-  // value3Title: string = "Solidarité !";
-  // value3Description: string = "2€ sur l’adhésion annuelle sont reversés à une association caritative.";
+  value1Title: string = "Entraide !";
+  value1Description: string = "Chacun se soutient et s’encourage pour donner le meilleur de soi et atteindre le but qu’il s’est fixé !";
+  value2Title: string = "Sourire !";
+  value2Description: string = "Des courses…mais aussi des apéros organisés par l’association !";
+  value3Title: string = "Solidarité !";
+  value3Description: string = "2€ sur l’adhésion annuelle sont reversés à une association caritative.";
 
   constructor(private router: Router) {
   }

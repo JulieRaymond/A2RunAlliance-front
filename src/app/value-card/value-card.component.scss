@@ -1,0 +1,31 @@
+@import '../../variables';
+
+.value-card {
+  margin: 1rem 2rem 1rem 2rem;
+  overflow: hidden;
+  text-align: center;
+  background-color: $tertiary-color;
+}
+
+.top-bar,
+.bottom-bar {
+  height: 0.7rem;
+  width: 70%;
+  background-color: $primary-color;
+  margin: 0 auto;
+}
+
+.card-image {
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+.mat-mdc-card-content>:last-child:not(.mat-mdc-card-footer) {
+  margin-bottom: 1rem;;
+  @include responsive-font(1rem, 1.5rem, 2rem);
+}
+
+h2{
+  color: $secondary-color;
+  margin-top: 1rem;
+}

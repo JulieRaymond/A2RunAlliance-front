@@ -1,0 +1,10 @@
+<!-- value-card.component.html -->
+<mat-card class="value-card">
+  <div class="top-bar"></div>
+  <mat-card-content>
+    <h2>{{ title }}</h2>
+    <img *ngIf="imageSrc" [src]="imageSrc" alt="Card image" class="card-image">
+    <h3>{{ subtitle }}</h3>
+  </mat-card-content>
+  <div class="bottom-bar"></div>
+</mat-card>

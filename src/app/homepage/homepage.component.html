@@ -1,3 +1,4 @@
+<!--homepage.component.html-->
 <div class="homepage-image-container">
   <img [src]="homepagePathImage" alt="Group of runners for the homepage image" class="homepage-image">
   <h1 class="mat-title-large">{{ homepageTitle }}</h1>
@@ -7,24 +8,21 @@
   </div>
 </div>
 
-
-<!-- Bloc "Le concept" -->
 <div class="concept-container">
   <h2>{{ conceptTitle }}</h2>
   <p>{{ conceptText }}</p>
 </div>
 
-<!-- Bloc "Nos valeurs" -->
 <div class="values-container">
   <h2>{{ valueTitle }}</h2>
   <div class="value-cards">
-    <!--    <app-value-card [title]="value1Title" [description]="value1Description"></app-value-card>-->
-    <!--    <app-value-card [title]="value2Title" [description]="value2Description"></app-value-card>-->
-    <!--    <app-value-card [title]="value3Title" [description]="value3Description"></app-value-card>-->
+    <app-value-card [title]="value1Title" [subtitle]="value1Description"></app-value-card>
+    <app-value-card [title]="value2Title" [subtitle]="value2Description"></app-value-card>
+    <app-value-card [title]="value3Title" [subtitle]="value3Description"></app-value-card>
+
   </div>
 </div>
 
-<!-- Bloc "app-calendar" -->
 <div class="calendar-container">
   <!--  <app-calendar></app-calendar>-->
 </div>
