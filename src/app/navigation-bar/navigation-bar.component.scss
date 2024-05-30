@@ -22,9 +22,13 @@
 }
 
 .mat-toolbar-single-row {
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
 
 .drawer-logo {
   width: 2.5rem;
+}
+
+.mat-drawer-container {
+  z-index: 2;
 }
