@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import {ButtonComponent} from "./button/button.component";
 import {MatIconModule} from "@angular/material/icon";
 import {NavBarComponent} from "./nav-bar/nav-bar.component";
+import {NavigationBarComponent} from "./navigation-bar/navigation-bar.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ButtonComponent, MatIconModule, NavBarComponent],
+  imports: [RouterOutlet, ButtonComponent, MatIconModule, NavBarComponent, NavigationBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
