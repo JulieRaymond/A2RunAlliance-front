@@ -13,8 +13,8 @@
 </mat-toolbar>
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport mode="side" opened="false">
-    <mat-toolbar>
-      <img [src]="logoPathImage" alt="Logo A2 Run Alliance" class="drawer-logo"/>
+    <mat-toolbar class="mat-toolbar">
+      <img [src]="logoPath" alt="Logo A2 Run Alliance" class="drawer-logo"/>
       <span class="drawer-title">Menu</span>
       <button mat-icon-button (click)="toggleSidenav()">
         <mat-icon aria-label="Close sidenav">close</mat-icon>

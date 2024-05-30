@@ -1,34 +1,30 @@
-.nav-title {
-  flex: 1;
-  text-align: center;
+.mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  > .nav-title {
+    flex: 1;
+    text-align: center;
+  }
 }
 
 .sidenav-container {
   height: 100%;
-}
 
-.sidenav {
-  width: 15rem;
-}
+  > .sidenav {
+    width: 15rem;
 
-.sidenav .mat-toolbar {
-  background: inherit;
-}
-
-.mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+    .drawer-links-icons {
+      margin-right: 1rem;
+    }
+  }
 }
 
 .mat-toolbar-single-row {
   justify-content: space-evenly
 }
 
-.drawer-links-icons {
-  margin-right: 1rem;
-}
-
-.drawer-logo{
+.drawer-logo {
   width: 2.5rem;
 }

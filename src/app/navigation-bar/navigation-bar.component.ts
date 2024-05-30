@@ -21,7 +21,7 @@ import {MatIconModule} from '@angular/material/icon';
   ]
 })
 export class NavigationBarComponent {
-  logoPathImage = "/assets/logos/logoA2-black.jpg";
+  logoPath = "/assets/logos/logoA2-black.jpg";
 
   @ViewChild('drawer') drawer!: MatSidenav;
 
