@@ -1,10 +1,10 @@
 @import '../../variables';
 
 .value-card {
-  margin: 1rem 2rem 1rem 2rem;
   overflow: hidden;
   text-align: center;
   background-color: $tertiary-color;
+  @include responsive-card(10%, 20%, 30%);
 }
 
 .top-bar,
@@ -20,9 +20,9 @@
   margin: 10px 0;
 }
 
-.mat-mdc-card-content>:last-child:not(.mat-mdc-card-footer) {
+.mat-mdc-card-content> h3{
   margin-bottom: 1rem;;
-  @include responsive-font(1rem, 1.5rem, 2rem);
+  @include responsive-font(1rem, 1.5rem, 1.5rem);
 }
 
 h2{

@@ -27,3 +27,15 @@ $color-white-transparent : rgba(255, 255, 255, 0.7);
     font-size: $max-size;
   }
 }
+
+@mixin responsive-card($min-margin,$moy-margin, $max-margin) {
+  margin: 2rem $min-margin;
+
+  @media (min-width: $breakpoint-sm) {
+    margin: 2rem $moy-margin;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin: 2rem $max-margin;
+  ;
+  }
+}
