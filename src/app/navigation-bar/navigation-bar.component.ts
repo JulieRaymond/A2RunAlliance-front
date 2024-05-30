@@ -1,11 +1,10 @@
 import {Component, ViewChild} from '@angular/core';
-import { AsyncPipe } from '@angular/common';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
+import {AsyncPipe} from '@angular/common';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
 import {MatSidenav, MatSidenavModule} from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
-import { MatIconModule } from '@angular/material/icon';
-
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -22,9 +21,12 @@ import { MatIconModule } from '@angular/material/icon';
   ]
 })
 export class NavigationBarComponent {
+  logoPathImage = "/assets/logos/logoA2-black.jpg";
+
   @ViewChild('drawer') drawer!: MatSidenav;
 
-  constructor() {}
+  constructor() {
+  }
 
   toggleSidenav() {
     this.drawer.toggle();
