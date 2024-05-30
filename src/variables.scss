@@ -1,0 +1,30 @@
+// Breakpoints
+$breakpoint-xs: 599px;
+$breakpoint-sm: 600px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1920px;
+
+// Variables de couleurs
+$primary-color: #38522F;
+$secondary-color: #6E191A;
+$tertiary-color: #FEF5E7;
+$font-size-base: 1rem;
+$color-white: white;
+$color-white : white;
+$color-black : black;
+$color-white-transparent : rgba(255, 255, 255, 0.7);
+
+// Mixins
+
+@mixin responsive-font($min-size,$moy-size, $max-size) {
+  font-size: $min-size;
+  line-height: 1.5;
+
+  @media (min-width: $breakpoint-sm) {
+    font-size: $moy-size;
+  }
+  @media (min-width: $breakpoint-md) {
+    font-size: $max-size;
+  }
+}
