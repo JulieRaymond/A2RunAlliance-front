@@ -16,7 +16,6 @@ $color-black : black;
 $color-white-transparent : rgba(255, 255, 255, 0.7);
 
 // Mixins
-
 @mixin responsive-font($min-size,$moy-size, $max-size) {
   font-size: $min-size;
   line-height: 1.5;
