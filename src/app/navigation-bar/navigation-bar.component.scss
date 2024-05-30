@@ -8,7 +8,7 @@
 }
 
 .sidenav {
-  width: 200px;
+  width: 15rem;
 }
 
 .sidenav .mat-toolbar {
@@ -19,4 +19,12 @@
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.mat-toolbar-single-row {
+  justify-content: space-evenly
+}
+
+.drawer-links-icons {
+  margin-right: 1rem;
 }
