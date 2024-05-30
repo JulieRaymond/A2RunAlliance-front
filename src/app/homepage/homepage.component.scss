@@ -36,6 +36,11 @@
 
 .introduction-text {
   background-color: $color-white-transparent;
-  padding: 1rem;
   @include responsive-font(1rem, 1.5rem, 2rem);
 }
+
+.concept-container, .values-container > h2{
+  text-align: center;
+  margin-top: 3rem;
+}
+
