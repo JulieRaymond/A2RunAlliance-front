@@ -1,4 +1,6 @@
+@import "../../variables";
+
 .demo-inline-calendar-card {
-  width: 21rem;
+  @include reponsive-calendar(100%, 50%, 33%);
   margin: 0 auto;
 }

@@ -19,7 +19,7 @@ import {MatCard} from "@angular/material/card";
 })
 export class HomepageComponent {
   homepagePathImage = "/assets/images/homepage-mobil.jpg";
-  homepageTitle ="Vous ne courrez plus jamais seul.e !";
+  homepageTitle ="Ne courrez plus seul.e !";
 
   introductionText: string ="A2 Running Bordeaux réunit toutes les personnes qui souhaitent courir en groupe, dans la bonne humeur, l’entraide et surtout sans esprit de compétition.";
 

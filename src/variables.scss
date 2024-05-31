@@ -52,3 +52,14 @@ $color-white-transparent: rgba(255, 255, 255, 0.7);
     margin: 2rem $max-margin;
   }
 }
+
+@mixin reponsive-calendar($min-width,$moy-width, $max-width) {
+  width: $min-width;
+
+  @media (min-width: $breakpoint-sm) {
+    width: $moy-width;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: $max-width;
+  }
+}
