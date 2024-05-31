@@ -2,13 +2,15 @@ import {Component} from '@angular/core';
 import {Router} from "@angular/router";
 import {ButtonComponent} from "../button/button.component";
 import {ValueCardComponent} from "../value-card/value-card.component";
+import {CalendarComponent} from "../calendar/calendar.component";
 
 @Component({
   selector: 'app-homepage',
   standalone: true,
   imports: [
     ButtonComponent,
-    ValueCardComponent
+    ValueCardComponent,
+    CalendarComponent
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.scss'

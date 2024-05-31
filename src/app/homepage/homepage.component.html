@@ -14,15 +14,24 @@
 </div>
 
 <div class="values-container">
-  <h2>{{ valueTitle }}</h2>
-  <div class="value-cards">
-    <app-value-card [title]="value1Title" [subtitle]="value1Description"></app-value-card>
-    <app-value-card [title]="value2Title" [subtitle]="value2Description"></app-value-card>
-    <app-value-card [title]="value3Title" [subtitle]="value3Description"></app-value-card>
-
-  </div>
+  <app-value-card
+    [title]="'Entraide !'"
+    [subtitle]="'Chacun se soutient et s’encourage pour donner le meilleur de soi et atteindre le but qu’il s’est fixé !'"
+    [imageSrc]="'assets/images/value1.png'">
+  </app-value-card>
+  <app-value-card
+    [title]="'Sourire !'"
+    [subtitle]="'Des courses…mais aussi des apéros organisés par l’association !'"
+    [imageSrc]="'assets/images/value2.png'">
+  </app-value-card>
+  <app-value-card
+    [title]="'Solidarité !'"
+    [subtitle]="'2€ sur l’adhésion annuelle sont reversés à une association caritative.'"
+    [imageSrc]="'assets/images/value3.png'">
+  </app-value-card>
 </div>
 
+
 <div class="calendar-container">
-  <!--  <app-calendar></app-calendar>-->
+    <app-calendar></app-calendar>
 </div>
