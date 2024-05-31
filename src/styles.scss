@@ -5,6 +5,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 //
 //body {
 //  display: flex;
@@ -13,6 +14,22 @@ html, body {
 
 main {
   flex: 1;
+
+  h1 {
+    @include responsive-font(2rem, 3rem, 4rem);
+  }
+
+  h2 {
+    @include responsive-font(1.6rem, 2.6rem, 3.6rem);
+  }
+
+  h3 {
+    @include responsive-font(1.2rem, 1.5rem, 1.6rem);
+  }
+
+  p {
+    @include responsive-font(1rem, 1.5rem, 2rem);
+  }
 }
 
 footer {

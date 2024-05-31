@@ -31,12 +31,10 @@
 
 .homepage-image-container h1 {
   color: white;
-  @include responsive-font(2rem, 3rem, 4rem);
 }
 
 .introduction-text {
   background-color: $color-white-transparent;
-  @include responsive-font(1rem, 1.5rem, 2rem);
 }
 
 .concept-container, .values-container, .calendar-container{
