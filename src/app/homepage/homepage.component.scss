@@ -37,7 +37,9 @@
   background-color: $color-white-transparent;
 }
 
-.concept-container, .values-container, .calendar-container{
+.concept-container, .values-container, .calendar-container {
+  @include responsive-container(2rem, 4rem, 6rem);
+
   > h2 {
     color: $secondary-color;
     text-align: center;

@@ -11,9 +11,9 @@ $secondary-color: #6E191A;
 $tertiary-color: #FEF5E7;
 $font-size-base: 1rem;
 $color-white: white;
-$color-white : white;
-$color-black : black;
-$color-white-transparent : rgba(255, 255, 255, 0.7);
+$color-white: white;
+$color-black: black;
+$color-white-transparent: rgba(255, 255, 255, 0.7);
 
 // Mixins
 @mixin responsive-font($min-size,$moy-size, $max-size) {
@@ -25,6 +25,17 @@ $color-white-transparent : rgba(255, 255, 255, 0.7);
   }
   @media (min-width: $breakpoint-md) {
     font-size: $max-size;
+  }
+}
+
+@mixin responsive-container($min-margin,$moy-margin, $max-margin) {
+  margin-left: $min-margin;
+
+  @media (min-width: $breakpoint-sm) {
+    margin: $moy-margin;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin: $max-margin;
   }
 }
 
