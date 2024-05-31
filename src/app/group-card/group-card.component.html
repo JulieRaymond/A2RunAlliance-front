@@ -1,0 +1,10 @@
+<mat-card [ngClass]="getGroupClass()" class="group-card">
+  <div class="group-content">
+    <mat-icon class="group-icon">directions_run</mat-icon>
+    <div class="group-info">
+      <div class="group-name">{{ group.name }}</div>
+      <div class="group-details">{{ group.details }}</div>
+    </div>
+    <div class="group-speed-range">{{ group.speedRange }}</div>
+  </div>
+</mat-card>
