@@ -3,6 +3,7 @@ import {Router} from "@angular/router";
 import {ButtonComponent} from "../button/button.component";
 import {ValueCardComponent} from "../value-card/value-card.component";
 import {CalendarComponent} from "../calendar/calendar.component";
+import {MatCard} from "@angular/material/card";
 
 @Component({
   selector: 'app-homepage',
@@ -10,7 +11,8 @@ import {CalendarComponent} from "../calendar/calendar.component";
   imports: [
     ButtonComponent,
     ValueCardComponent,
-    CalendarComponent
+    CalendarComponent,
+    MatCard
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.scss'
@@ -29,12 +31,8 @@ export class HomepageComponent {
     'Fin 2013, elles sont rejointes par Sophia, Florence, Marie, Marion, Barbara et Kelly. L’association A2 running est créée.';
 
   valueTitle: string = 'Nos valeurs';
-  value1Title: string = "Entraide !";
-  value1Description: string = "Chacun se soutient et s’encourage pour donner le meilleur de soi et atteindre le but qu’il s’est fixé !";
-  value2Title: string = "Sourire !";
-  value2Description: string = "Des courses…mais aussi des apéros organisés par l’association !";
-  value3Title: string = "Solidarité !";
-  value3Description: string = "2€ sur l’adhésion annuelle sont reversés à une association caritative.";
+
+  calendarTitle ="Trouver un cours";
 
   constructor(private router: Router) {
   }

@@ -16,5 +16,5 @@ import {NgIf} from "@angular/common";
 export class ValueCardComponent {
   @Input() title!: string;
   @Input() subtitle!: string;
-  @Input() imageSrc: string = "/assets/images/value1.png";
+  @Input() imageSrc!: string;
 }

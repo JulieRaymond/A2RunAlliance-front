@@ -39,8 +39,11 @@
   @include responsive-font(1rem, 1.5rem, 2rem);
 }
 
-.concept-container, .values-container > h2{
-  text-align: center;
-  margin-top: 3rem;
+.concept-container, .values-container, .calendar-container{
+  > h2 {
+    color: $secondary-color;
+    text-align: center;
+    margin-top: 3rem;
+  }
 }
 
