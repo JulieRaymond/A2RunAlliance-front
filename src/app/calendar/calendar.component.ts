@@ -13,6 +13,17 @@ import {provideNativeDateAdapter} from '@angular/material/core';
   templateUrl: './calendar.component.html',
   styleUrl: './calendar.component.scss'
 })
+
 export class CalendarComponent {
-  selected!: Date | null;
+  selected: Date | null = null;
+
+  formatDateToFrench(selectedDate: Date): string {
+    const options: Intl.DateTimeFormatOptions = {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    };
+    return selectedDate.toLocaleDateString('fr-FR', options);
+  }
 }

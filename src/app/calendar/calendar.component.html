@@ -1,4 +1,4 @@
 <mat-card class="demo-inline-calendar-card">
   <mat-calendar [(selected)]="selected"></mat-calendar>
 </mat-card>
-<p>Date de cours choisie: {{selected}}</p>
+<p>Date de cours choisie: {{ selected ? formatDateToFrench(selected) : '' }}</p>
