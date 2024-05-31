@@ -30,12 +30,15 @@ $color-white-transparent: rgba(255, 255, 255, 0.7);
 
 @mixin responsive-container($min-margin,$moy-margin, $max-margin) {
   margin-left: $min-margin;
+  margin-right: $min-margin;
 
   @media (min-width: $breakpoint-sm) {
-    margin: $moy-margin;
+    margin-left: $moy-margin;
+    margin-right: $moy-margin;
   }
   @media (min-width: $breakpoint-md) {
-    margin: $max-margin;
+    margin-left: $max-margin;
+    margin-right: $max-margin;
   }
 }
 
