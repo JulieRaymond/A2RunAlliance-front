@@ -15,6 +15,5 @@ import {MatListItem} from "@angular/material/list";
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  footerLogoPath = "/assets/logos/logoA2-black.jpg";
-
+  footerLogoPath = "/assets/logos/logoA2-black.png";
 }
