@@ -2,6 +2,7 @@ import {Component, Input} from '@angular/core';
 import {MatCard} from "@angular/material/card";
 import {MatIcon} from "@angular/material/icon";
 import {NgClass} from "@angular/common";
+import {Course} from "../interfaces/course.interface";
 
 @Component({
   selector: 'app-group-card',
@@ -15,10 +16,10 @@ import {NgClass} from "@angular/common";
   styleUrl: './group-card.component.scss'
 })
 export class GroupCardComponent {
-  @Input() group: any;
+  @Input() course!: Course;
 
   getGroupClass() {
-    switch (this.group.name) {
+    switch (this.course.level) {
       case 'Groupe Orange':
         return 'group-orange';
       case 'Groupe Jaune':

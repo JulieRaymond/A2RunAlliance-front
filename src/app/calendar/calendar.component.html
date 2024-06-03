@@ -26,9 +26,7 @@
   <mat-step label="Etape 3: Aperçu de la course">
     <div *ngIf="stepper.selectedIndex === 2">
       <p>Aperçu de la course:</p>
-      <p>Niveau: {{ courseExemple.level }}</p>
-      <p>Kilomètre: {{ courseExemple.kilometer }}</p>
-      <p>Temps: {{ courseExemple.time }}</p>
+      <app-group-card [course]="courseExemple"></app-group-card> <!-- Passer l'objet courseExemple à GroupCardComponent -->
       <button mat-raised-button (click)="stepper.next()">Confirmer</button>
     </div>
   </mat-step>

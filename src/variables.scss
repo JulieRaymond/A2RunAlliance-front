@@ -14,6 +14,12 @@ $color-white: white;
 $color-white: white;
 $color-black: black;
 $color-white-transparent: rgba(255, 255, 255, 0.7);
+$color-orange: #FFC2AF;
+$color-yellow: #FFE9AF;
+$color-pink: #F3DFFF;
+$color-blue: #C8E1FF;
+$color-green: #E7FFD9;
+$color-red: #D16C6C;
 
 // Mixins
 @mixin responsive-font($min-size,$moy-size, $max-size) {

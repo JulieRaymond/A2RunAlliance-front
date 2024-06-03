@@ -4,6 +4,7 @@ import {ButtonComponent} from "../button/button.component";
 import {ValueCardComponent} from "../value-card/value-card.component";
 import {CalendarComponent} from "../calendar/calendar.component";
 import {MatCard} from "@angular/material/card";
+import {GroupCardComponent} from "../group-card/group-card.component";
 
 @Component({
   selector: 'app-homepage',
@@ -12,7 +13,8 @@ import {MatCard} from "@angular/material/card";
     ButtonComponent,
     ValueCardComponent,
     CalendarComponent,
-    MatCard
+    MatCard,
+    GroupCardComponent
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.scss'

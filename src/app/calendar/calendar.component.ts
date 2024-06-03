@@ -6,13 +6,14 @@ import {Course} from "../interfaces/course.interface";
 import {NgForOf, NgIf} from "@angular/common";
 import {MatButton} from "@angular/material/button";
 import {MatStep, MatStepper} from "@angular/material/stepper";
+import {GroupCardComponent} from "../group-card/group-card.component";
 
 @Component({
   selector: 'app-calendar',
   standalone: true,
   providers: [provideNativeDateAdapter()],
   imports: [
-    MatCardModule, MatDatepickerModule, NgIf, MatButton, NgForOf, MatStepper, MatStep
+    MatCardModule, MatDatepickerModule, NgIf, MatButton, NgForOf, MatStepper, MatStep, GroupCardComponent
   ],
   templateUrl: './calendar.component.html',
   styleUrl: './calendar.component.scss'
@@ -42,10 +43,13 @@ export class CalendarComponent {
     description: "Description Course 1",
     date: new Date(2024, 5, 31),
     available_hours: ['09:00', '10:00', '11:00'],
-    level: "Groupe orange",
+    level: "Groupe Orange",
     kilometer: "8km",
-    time: "35min"
+    time: "35min",
+    kmbyhour: "8 à 9 km/h",
+    pace: "(entre 6’40 et 7’30 min/km)"
   };
+
 
   // Méthode pour avancer à l'étape suivante du stepper
   nextStep(): void {

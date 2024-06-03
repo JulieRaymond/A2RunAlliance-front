@@ -7,4 +7,6 @@ export interface Course {
   level: string;
   kilometer: string;
   time: string;
+  kmbyhour: string;
+  pace: string;
 }
